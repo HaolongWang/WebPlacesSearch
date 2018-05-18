@@ -1,0 +1,114 @@
+        .background{
+				border: 1px solid #000;
+				width: 880px;
+				height: 380px;
+				background-color: #F0F0F0;
+				margin: 0 auto;
+			}
+		p {
+				font-size: 12px;
+				font-weight: 600;
+			}
+        .mapss {
+        	width: 1000px;
+            height: 500px;
+        }
+        .img {
+        	width: 100%;
+        	height: 100%;
+        	border: 6px solid #fff;
+        }
+        @keyframes left-hide {  
+                from{  
+                    margin-left: 0;  
+                }  
+                to{  
+                    margin-left: -100%;  
+                }  
+            }
+        @keyframes left-show{  
+                from{  
+                    margin-left: -100%;  
+                }  
+                to{  
+                    margin-left: 0;  
+                }  
+            }
+        @keyframes right-hide{  
+                from{  
+                    margin-left: 0;  
+                }  
+                to{  
+                    margin-left: 100%;  
+                }  
+            }
+        @keyframes right-show{  
+                from{  
+                    margin-left: 100%;  
+                }  
+                to{  
+                    margin-left: 0;  
+                }  
+            }
+        .left-animation{  
+                
+                position: absolute;  
+                width: 90%;
+                overflow: hidden;
+                margin: 0 auto;
+                
+            }  
+        .left-animation.ng-hide-add{  
+                animation: left-hide 1s;  
+                  
+            }  
+        .left-animation.ng-hide-remove{  
+                animation: left-show 1s;  
+                  
+            }  
+        .right-animation{  
+                
+                position: absolute;  
+                width: 90%;
+                overflow: hidden; 
+                margin: 0 auto; 
+
+            }  
+        .right-animation.ng-hide-add{  
+                animation: right-hide 1s;  
+                  
+            }  
+        .right-animation.ng-hide-remove{  
+                animation: right-show 1s;  
+                  
+            }
+        #ajaxloads{
+        	position: absolute;
+        	margin: 0 auto;
+        	left: 20%;
+        	width: 60%;
+        }
+        .animate-show.ng-hide-add, 
+        .animate-show.ng-hide-remove {
+            -webkit-transition:all linear 0.3s;
+            -moz-transition:all linear 0.3s;
+            -o-transition:all linear 0.3s;
+            transition:all linear 0.3s;
+            display:block;
+        }
+        .animate-show.ng-hide-add.ng-hide-add-active,
+        .animate-show.ng-hide-remove {
+            opacity:0;
+        }
+        .animate-show.ng-hide-add,
+        .animate-show.ng-hide-remove.ng-hide-remove-active { 
+            opacity:0.5;
+        } 
+        .has-error input[type=text]{
+            border-color: red;
+            font-size: 12px;
+        }
+        .help-block {
+            color: red;
+            font-size: 12px;
+        }
